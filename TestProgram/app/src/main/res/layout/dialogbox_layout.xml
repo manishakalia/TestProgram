@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_disburse_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp"
+            android:text="SMS Alert"
+            android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvTitleMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="message"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etSmsMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_disburse_disburse_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/exlistbg_group"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:layout_marginLeft="10dp"
+            android:background="@color/exlistbg_group"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:text="@string/ok" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
